@@ -93,7 +93,7 @@ class Login extends Component {
                 onChangeText={(value) =>
                   this.setState({ username: { value, errorMessage: "" } })
                 }
-                autoFocus
+                // autoFocus
                 style={Styles.inputControl}
               />
               <Text style={Styles.inputError}>

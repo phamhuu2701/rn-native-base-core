@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { TouchableHighlight } from "react-native-gesture-handler";
+import { View, Text, TouchableHighlight } from "react-native";
 import { Styles, Colors } from "../../../static/Theme";
 
 function RnTouchableHighlight(props) {

@@ -4,13 +4,13 @@ import { View, StatusBar } from "react-native";
 function RnStatusBar(props) {
   return (
     <View>
-      <StatusBar
-      // hidden={false}
-      // animated={true}
-      // backgroundColor="red"
-      // barStyle="light-content"
-      // translucent={true}
-      />
+      {/* <StatusBar
+        hidden={false}
+        animated={true}
+        backgroundColor="red"
+        barStyle="light-content"
+        translucent={true}
+      /> */}
     </View>
   );
 }

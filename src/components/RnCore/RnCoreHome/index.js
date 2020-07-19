@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, ScrollView, TouchableOpacity } from "react-native";
 import { coreScreens } from "../../../screens";
-import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import { Styles } from "../../../static/Theme";
 
 class RnCoreHome extends Component {

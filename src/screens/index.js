@@ -31,6 +31,10 @@ import RnDimensions from "../components/RnApis/RnDimensions";
 import RnLinking from "../components/RnApis/RnLinking";
 import RnShare from "../components/RnApis/RnShare";
 import RnHooks from "../components/RnApis/RnHooks";
+import NbHome from "../components/NativeBase/NbHome";
+import NbAnatomy from "../components/NativeBase/NbAnatomy";
+import NbActionSheet from "../components/NativeBase/NbActionSheet";
+import NbButton from "../components/NativeBase/NbButton";
 
 export const homeScreens = {
   Home: HomeScreen,
@@ -82,6 +86,13 @@ export const customizesScreens = {
   Customizes: RnCustomizesHome,
 };
 
+export const nbScreens = {
+  Home: NbHome,
+  Anatomy: NbAnatomy,
+  ActionSheet: NbActionSheet,
+  Button: NbButton,
+};
+
 export const getTabScreens = () => {
   return Object.entries({
     Core: RnCoreStack,
@@ -114,10 +125,11 @@ export const getDrawerScreens = (isLoggedIn) => {
 export const getScreens = (isLoggedIn) => {
   return Object.entries({
     ...homeScreens,
-    ...(isLoggedIn ? userScreens : authScreens),
-    ...(isLoggedIn && coreScreens),
-    ...(isLoggedIn && apisScreens),
-    ...(isLoggedIn && customizesScreens),
+    // ...(isLoggedIn ? userScreens : authScreens),
+    ...(isLoggedIn ? nbScreens : authScreens),
+    // ...(isLoggedIn && coreScreens),
+    // ...(isLoggedIn && apisScreens),
+    // ...(isLoggedIn && customizesScreens),
     ...commonScreens,
   });
 };

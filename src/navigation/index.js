@@ -22,14 +22,14 @@ class index extends Component {
     const { store } = this.props;
     const { isLoggedIn } = this.props.auth;
 
-    console.log("store :>> ", store);
+    // console.log("store :>> ", store);
 
     return (
       <NavigationContainer>
         {/* <StackNavigator /> */}
-        {/* <DrawerNavigator /> */}
+        <DrawerNavigator />
         {/* <TabNavigator /> */}
-        {isLoggedIn ? <TabNavigator /> : <DrawerNavigator />}
+        {/* {isLoggedIn ? <TabNavigator /> : <DrawerNavigator />} */}
       </NavigationContainer>
     );
   }

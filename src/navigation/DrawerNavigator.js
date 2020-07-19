@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { getDrawerScreens } from "../screens";
+import { getDrawerScreens, getScreens } from "../screens";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
 function mapStateToProps(state) {
@@ -19,7 +19,8 @@ class DrawerNavigator extends Component {
   render() {
     const { isLoggedIn } = this.props.auth;
 
-    const screens = getDrawerScreens(isLoggedIn);
+    // const screens = getDrawerScreens(isLoggedIn);
+    const screens = getScreens(isLoggedIn);
 
     // console.log("DrawerNavigator this.props :>> ", this.props);
 

@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Text, View, ScrollView, TouchableOpacity } from "react-native";
-import { apisScreens } from "../../../screens";
+import { nbScreens } from "../../../screens";
 import { Styles } from "../../../static/Theme";
 
-class RnCoreHome extends Component {
+class NbHome extends Component {
   constructor(props) {
     super(props);
     this.navigation = props.navigation;
   }
 
   render() {
-    const screens = Object.entries(apisScreens);
+    const screens = Object.entries(nbScreens);
 
     return (
       <ScrollView>
@@ -30,4 +30,4 @@ class RnCoreHome extends Component {
   }
 }
 
-export default RnCoreHome;
+export default NbHome;

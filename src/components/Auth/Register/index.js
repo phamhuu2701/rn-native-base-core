@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Text, Button } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { loginAction } from "./../../../store/actions/auth";
-import { TouchableOpacity } from "react-native-gesture-handler";
 import { Styles } from "../../../static/Theme";
 
 function mapStateToProps(state) {
